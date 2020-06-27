@@ -1,0 +1,27 @@
+<h3>Cart</h3>
+
+<p>Your Order:</p>
+<div *ngFor="let x of items">
+	<div class="card bg-light mb-3">
+		
+ 		<div class="card-header">
+ 			{{ x.destination }} 
+ 		</div>
+ 		<div class="card-body">
+ 			<div class="card-title">
+ 				{{ x.price | currency }}
+ 			</div>
+ 			<p class="card-text">
+				Date: {{x.start}}<br>
+				Nights: {{x.duration}}<br>
+			</p>
+ 		</div>
+	</div>
+</div>
+
+
+
+
+<div class="m-5">
+	<b>{{printIt}}</b>
+</div>

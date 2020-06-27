@@ -1,0 +1,13 @@
+.jumbotron {
+	background-image: url('/assets/img/jumbo.jpg');
+	height: 100vh;
+	background-size: cover;
+	padding: 0;
+	border-radius: 0;
+}
+#jumbocont {
+	padding: 3%;
+	margin: 0 auto;
+	margin-top: 30vh;
+	background: rgb(255,255,255, .5);
+}

@@ -1,0 +1,17 @@
+<h2>Products</h2>
+
+<div class="card-columns">	
+	<div class="card p-3" *ngFor="let x of travels; index as ID" >
+		<img class="card-img-top" src="{{x.img}}">
+		<div class="card-body">
+			<h5 class="card-title">{{ x.destination }}</h5>
+			<p class="card-text">{{x.description}}</p>
+			<p class="card-text">
+				Date: {{x.start}}<br>
+				Nights: {{x.duration}}<br>
+				Price: {{x.price}} €
+			</p>
+			<button (click)="addToCart(x)">Book now</button>
+		</div>
+	</div>
+</div>
